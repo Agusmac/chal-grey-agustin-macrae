@@ -18,7 +18,7 @@ export default function Home() {
       setTimeout(() => {
         router.push('/clients/0')
       }, 600);
-    }, [])
+    }, [router])
 
   return (
    

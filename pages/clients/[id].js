@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 // this is at the limit (maybe a bit over it) of needing to be divided into components, I hope it remains readable!
 
-export default function client() {
+export default function Client() {
     const router = useRouter()
     const { id } = router.query
 
@@ -44,7 +44,7 @@ export default function client() {
 
                 {/* the data did not include this part so i just used this one */}
                 <h2 className='text-3xl mb-8'>{clientData.escenario}</h2>
-
+                {/* not sure what to use here so i used the item n */}
                 <h2 className='text-2xl'>Testeador {Number(id) + 1}</h2>
             </div>
 
